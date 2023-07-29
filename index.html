@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Works Hours Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Works Hours Calculator</h1>
+    </header>
+    <main>
+        <section class="result-container">
+            <span>Calculation Result : <span class="result"></span></span>
+        </section>
+        <section>
+            <label for="startDate">Start Day:</label>
+            <input id="startDate" type="date">
+            <label for="endDate">End Day:</label>
+            <input id="endDate" type="date">
+            <label for="dailyWorkingHours">Daily Working Hours</label>
+            <input id="dailyWorkingHours" type="number" min="0" max="24" value="8">
+            <fieldset>
+                <legend>Work Days</legend>
+                <div>
+                    <label for="sun">Sunday</label>
+                    <input id="sun" class="days" type="checkbox" checked>
+                </div>
+                <div>
+                    <label for="mon">Monday</label>
+                    <input id="mon" class="days" type="checkbox" checked>
+                </div>
+                <div>
+                    <label for="tue">Tuesday</label>
+                    <input id="tue" class="days" type="checkbox" checked>
+                </div>
+                <div>
+                    <label for="wed">Wednesday</label>
+                    <input id="wed" class="days" type="checkbox" checked>
+                </div>
+                <div>
+                    <label for="thu">Thursday</label>
+                    <input id="thu" class="days" type="checkbox" checked>
+                </div>
+                <div>
+                    <label for="fri">Friday</label>
+                    <input id="fri" class="days" type="checkbox">
+                </div>
+                <div>
+                    <label for="sat">Saturday</label>
+                    <input id="sat" class="days" type="checkbox" checked>
+                </div>
+
+            </fieldset>
+            <button class="calculate">Calculate</button>
+
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
